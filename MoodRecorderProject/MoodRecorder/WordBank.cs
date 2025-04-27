@@ -8,6 +8,8 @@ public class WordBank
     List<string> Existing_not_happy_words = new List<string>();
     List<string> ExistingHappinessTriggers = new List<string>();
     List<string> ExistingSadnessTriggers = new List<string>();
+    List<string> MoodAdjectives = new List<string>();
+    List<string> MoodTriggers = new List<string>();
 
     public WordBank(){
         if(!File.Exists("HappyWords.txt")){
@@ -67,5 +69,22 @@ public class WordBank
             }
         }
     }
-
+    public List<string> SomeMoodAdjectives(){
+        foreach(string line in File.ReadAllLines("HappyWords.txt")){
+            MoodAdjectives.Add(line);
+        }
+        foreach(string line in File.ReadAllLines("NotHappyWords.txt")){
+            MoodAdjectives.Add(line);
+        }
+        return MoodAdjectives;
+    }
+    public List<string> MoodTriggerPhrases(){
+        foreach(string line in File.ReadAllLines("HappinessTriggers.txt")){
+            MoodTriggers.Add(line);
+        }
+        foreach(string line in File.ReadAllLines("SadnessTriggers.txt")){
+            MoodTriggers.Add(line);
+        }
+        return MoodTriggers;
+    }
 }

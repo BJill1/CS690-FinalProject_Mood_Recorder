@@ -5,7 +5,8 @@ using System.IO;
 
 public class UserType
 {
-    
+    WordBank word_bank = new WordBank();
+   
     public UserType()
     {
         
@@ -40,6 +41,16 @@ public class UserType
         }
         if(CredentialsList.Contains(User_credentials)){
             Console.WriteLine("You entered the correct credentials");
+            string MoodIdentifier = AnsiConsole.Prompt(
+                    new SelectionPrompt<string>()
+                    .Title("Select a word that best describes your mood today:")
+                    .PageSize(10)
+                    .AddChoices(word_bank.SomeMoodAdjectives()));
+            string MoodTriggerIdentifier = AnsiConsole.Prompt(
+                    new SelectionPrompt<string>()
+                    .Title("Which of the following phrases do you identify with the most today?")
+                    .PageSize(10)
+                    .AddChoices(word_bank.MoodTriggerPhrases()));
         }
         else{
             Console.WriteLine("Either the password or the username is incorrect");

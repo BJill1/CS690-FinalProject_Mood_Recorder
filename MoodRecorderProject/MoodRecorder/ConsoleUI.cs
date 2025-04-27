@@ -5,8 +5,10 @@ using System.IO;
 
 public class ConsoleUI
 {
-        UserType ExistingOrNewUser = new UserType();
-        List<string> ListOfUser_credentials = new List<string>();
+    UserType ExistingOrNewUser = new UserType();
+    List<string> ListOfUser_credentials = new List<string>();
+    List<string> MoodAdjectives = new List<string>();
+    List<string> MoodTriggers = new List<string>();
     public ConsoleUI()
     {
 
