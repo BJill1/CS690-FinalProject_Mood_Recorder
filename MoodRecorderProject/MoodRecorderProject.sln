@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodRecorder.Tests", "MoodRecorder.Tests\MoodRecorder.Tests.csproj", "{388201E5-3551-4054-8A09-572FD3047934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodRecorder", "MoodRecorder\MoodRecorder.csproj", "{80F405C3-D816-4AEE-874F-D091AF2D2386}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{388201E5-3551-4054-8A09-572FD3047934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388201E5-3551-4054-8A09-572FD3047934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388201E5-3551-4054-8A09-572FD3047934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388201E5-3551-4054-8A09-572FD3047934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F405C3-D816-4AEE-874F-D091AF2D2386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F405C3-D816-4AEE-874F-D091AF2D2386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F405C3-D816-4AEE-874F-D091AF2D2386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F405C3-D816-4AEE-874F-D091AF2D2386}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
