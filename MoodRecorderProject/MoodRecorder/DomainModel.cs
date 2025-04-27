@@ -5,6 +5,7 @@ using System.IO;
 
 public class UserType
 {
+    
     public UserType()
     {
         
